@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Surprise</title>
+<meta name="keywords" content="Surprise"/>
+<meta name="description" content="Surprise"/>
+<link rel="shortcut icon" href="../icon/favicon3.ico"/>
+<link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+<link rel="stylesheet" href="../css/album.css">
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="http://xcdn.php.cn/js/qita/%E6%83%85%E4%BE%A3%E6%B5%AA%E6%BC%AB%E8%A1%A8%E7%99%BDjs%E7%89%B9%E6%95%88%E4%BB%A3%E7%A0%81/css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="http://xcdn.php.cn/js/qita/%E6%83%85%E4%BE%A3%E6%B5%AA%E6%BC%AB%E8%A1%A8%E7%99%BDjs%E7%89%B9%E6%95%88%E4%BB%A3%E7%A0%81/js/jquery.js"></script>
+<script type="text/javascript" src="http://xcdn.php.cn/js/qita/%E6%83%85%E4%BE%A3%E6%B5%AA%E6%BC%AB%E8%A1%A8%E7%99%BDjs%E7%89%B9%E6%95%88%E4%BB%A3%E7%A0%81/js/garden.js"></script>
+<script src="../js/jquery-1.12.2.min.js"></script>
+<script src="../js/zepto.js"></script>
+<script src="../lib/bootstrap/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+<link rel="stylesheet" href="https://home.darryring.com/bundles/acmewap/css/common.css" />
+<link rel="stylesheet" href="../css/bgm.css">
+<link rel="stylesheet" href="https://home.darryring.com/bundles/acmewap/css/index.css" />
+<script type="text/javascript" src="../js/functions.js"></script>
+
+
+ <style>
+   body{
+     background-color: #ffe;
+   }
+   *{
+     margin: 0;
+     padding: 0;
+   }
+   .index_clnav {
+    left: 1%;
+}
+   .row{
+     margin: 0;
+   }
+    #code{
+      font-size: 32px;
+      width: 100% ;
+    }
+    #content{
+      margin-top: 80px !important;
+      margin-left: 0px !important;
+      width: 100%  !important;
+    }
+    #loveHeart{
+      position: fixed;
+      top: 6% ;
+      right:  0;
+    }
+    #code span{
+      line-height: initial;
+    }
+    .mui-icon-back:before, .mui-icon-left-nav:before {
+    font-size: 70px;
+    content: '\e471';
+}
+.header{
+  height: 100px;
+  display: flex;
+    align-items: center;
+}
+.dr_menu span{
+  font-size: 80px;
+}
+#elapseClock{
+  margin-top: 30px;
+}
+.rotate ,#audio_btn{
+  width: 60px;
+  height: 60px;
+  right: 23px;
+    top: 18px;
+}
+
+</style>
+
+</head>
+
+<body onload=showtime() >
+  <!-- <div class="header indexHead">
+		<div class="indexHead_r">
+			<a  class="dr_menu"><span class="mui-icon mui-icon mui-icon-back GoHome"></span></a>
+		</div>
+  </div> -->
+  <i class="iconfont index_clnav">
+    <span class="mui-icon mui-icon mui-icon-back GoHome"></span>
+</i>
+
+<div class="video_exist play_yinfu" id="audio_btn" style="display: block;z-index:999999;">
+    <div id="yinfu" class="rotate"></div>
+    <audio preload="auto" autoplay=""   id="media" src="../mp4/bgm2yshskl.mp3" 
+      autoplay preload loop="loop"></audio>
+</div>
+
+<div id="mainDiv">
+
+    <div class="row"  id="content">
+            <div id="content">
+                <div id="code">
+                  <span class="comments">/**</span><br />
+                  <span class="space"/><span class="comments">*2013—12-13,</span><br />
+                  <span class="space"/><span class="comments">*2020-05-20.</span><br />
+                  <span class="space"/><span class="comments">*/</span><br />
+                  Boy name = <span class="keyword">Mr</span> CHEN<br />
+                  Girl name = <span class="keyword">Mrs</span> HUANG<br />
+                  <span class="comments">// Fall in love river. </span><br />
+                  The boy love the girl;<br />
+                  <span class="comments">// They love each other.</span><br />
+                  The girl loved the boy?<br />
+                  <span class="comments">// AS time goes on.</span><br />
+                  The boy can not be separated the girl;<br />
+                  <span class="comments">// At the same time.</span><br />
+                  The girl cannot leave the boy;<br />
+                  <span class="comments">// As long as you are.</span><br />
+                  <span class="comments">// Wishful, I am willing.</span><br />
+                  <span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+                  <span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+                  <span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+                  <span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+                  <span class="placeholder"/>The boy has but one dream;<br />
+                  <span class="comments">// The boy wants the girl could well have been happy.</span><br />
+                  <br>
+                  <br>
+                  I want to say:<br />
+                  Baby, I love you forever;<br />
+                </div>
+            </div>
+            <div id="loveHeart">
+              <canvas id="garden"></canvas>
+              <div id="words">
+                <div id="messages">
+                  亲爱的，这是我们一起的时光。
+                  <div id="elapseClock">
+                    <!-- <span  id="input"></span> -->
+                  </div>
+                </div>
+                <div id="loveu">
+                  爱你直到永永远远。<br/>
+                  <div class="signature">- 爱你的笨蛋</div>
+                </div>
+              </div>
+            </div>
+      
+      </div>
+	<!-- <div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2013—12-13,</span><br />
+			<span class="space"/><span class="comments">*2020-05-20.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> CHEN<br />
+			Girl name = <span class="keyword">Mrs</span> HUANG<br />
+			<span class="comments">// Fall in love river. </span><br />
+			The boy love the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loved the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not be separated the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not be separated the boy;<br />
+			<span class="comments">// As long as you are.</span><br />
+			<span class="comments">// Wishful, I am willing.</span><br />
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I love you forever;<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+					<div class="signature">- 爱你的人</div>
+				</div>
+			</div>
+		</div>
+  </div> -->
+  
+	<!--<div id="copyright">
+		 <a href="#">....</a><br />
+		<a href="#">....</a><br />
+	</div> -->
+</div>
+
+
+<script type="text/javascript">
+
+// var media = document.getElementById('media');
+
+// function mediar() {
+//   media.play();
+// }
+// window.onload= function(){
+   
+//   setInterval('mediar()',300)
+ 
+// }
+
+
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 1, 1);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+</body>
+</html>
+<script>
+
+    $('.GoHome').on('click',function () {
+      window.location.href = "../index.html";
+    })
+
+
+console.log(111);
+
+
+  var biryear = 2013;
+  var birmonth = 12;
+  var birday = 13;
+  var year = new Date();
+  var getyear = year.getYear();
+  TMonth = new Array('Jan','Feb','Mar','Apr','May','June','July','Aug','Sep','Oct','Nov','Dec');
+  nowMonth = birmonth - 1;
+  bmonth = TMonth[nowMonth];
+  var timerid;
+  var timerRunning = false;
+  var today = new Date();
+  var startday = new Date();
+  var enday = new Date();
+  var minPerDay = 0;
+  var secsLeft = 0;
+  var secsRound = 0;
+  var secsRemain = 0;
+  var minLeft = 0;
+  var minRound = 0;
+  var minRemain = 0;
+  var timeRemain = 0;
+  function showtime() 
+  {
+    startday = new Date(""+bmonth+" "+birday+", "+biryear+" 00:00 EDT");
+    startday.setYear(""+biryear+"");
+    today = new Date();
+    secsPerDay = 1000 ;
+    minPerDay = 60 * 1000 ;
+    hoursPerDay = 60 * 60 * 1000;
+    PerDay = 24 * 60 * 60 * 1000;
+    secsLeft = (today.getTime() - startday.getTime()) / minPerDay;
+    secsRound = Math.round(secsLeft);
+    secsRemain = secsLeft - secsRound;
+    secsRemain = (secsRemain < 0) ? secsRemain = 60 - ((secsRound - secsLeft) * 60) : secsRemain = (secsLeft - secsRound) * 60;
+    secsRemain = Math.round(secsRemain);
+    minLeft = ((today.getTime() - startday.getTime()) / hoursPerDay);
+    minRound = Math.round(minLeft);
+    minRemain = minLeft - minRound;
+    minRemain = (minRemain < 0) ? minRemain = 60 - ((minRound - minLeft) * 60) : minRemain = ((minLeft - minRound) * 60);
+    minRemain = Math.round(minRemain - 0.495);
+    hoursLeft = ((today.getTime() - startday.getTime()) / PerDay);
+    hoursRound = Math.round(hoursLeft);
+    hoursRemain = hoursLeft - hoursRound;
+    hoursRemain = (hoursRemain < 0) ? hoursRemain = 24 - ((hoursRound - hoursLeft) * 24)  : hoursRemain = ((hoursLeft - hoursRound) * 24);
+    hoursRemain = Math.round(hoursRemain - 0.5);
+    daysLeft = ((today.getTime() - startday.getTime()) / PerDay);
+    daysLeft = (daysLeft - 0.5);
+    daysRound = Math.round(daysLeft);
+    daysRemain = daysRound;
+    day_rem = " 天 >>> "
+    hour_rem = " 小时 >>> "
+    min_rem = " 分 >>> "
+    sec_rem = " 秒"
+    timeRemain = daysRemain + day_rem + hoursRemain + hour_rem + minRemain + min_rem + secsRemain + sec_rem;
+    // document.up.face.value = timeRemain;
+    // console.log(timeRemain);
+    
+    timerid = setTimeout("showtime()",1000);
+    timerRunning = true;
+    $('#input').html(timeRemain) ;
+    	var result = "<span class=\"digit\">" + daysRemain + "</span> days <span class=\"digit\">" + hoursRemain + "</span> hours <span class=\"digit\">" + minRemain + "</span> minutes <span class=\"digit\">" + secsRemain + "</span> seconds"; 
+    $("#elapseClock").html(result);
+  }
+
+
+</script>
+
+<script type="text/javascript" src="../js/bgm.js"></script>

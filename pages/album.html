@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我们的相册</title>
+  <link rel="shortcut icon" href="../icon/favicon3.ico"/>
+  <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="../css/album.css">
+  <link rel="stylesheet" href="../css/bgm.css">
+   <style>
+      .mui-content{
+        margin-top: 58px;
+      }
+      .mui-content-padded p {
+        color: #8b766c ;
+      }
+  </style>
+
+</head>
+<body>
+   <div class="header indexHead">
+		<div class="indexHead_r">
+			<a  class="dr_menu"><span class="mui-icon mui-icon mui-icon-back GoHome"></span></a>
+		</div>
+  </div>
+  <div class="video_exist play_yinfu" id="audio_btn" style="display: block;z-index:999999;">
+      <div id="yinfu" class="rotate"></div>
+      <audio preload="auto" autoplay="" id="media" src="../mp4/bgm.mp3" 
+        autoplay preload loop="loop"></audio>
+  </div>
+    <div class="mui-content">
+        <div class="mui-content-padded">
+          <p>幸福的是：一个笨蛋遇到一个傻瓜，引来无数人的羡慕……</p>
+          <p>
+            <img src="http://b377.photo.store.qq.com/psb?/V12pHhGv4dCCVJ/XroySTpRML9yKMk5ERRl8CublsFaoHWMgM8R6E3YfFg!/b/dHtcuuC4FgAA&bo=gAJUA4ACVAMBByA!&rf=viewer_4" data-preview-src="" data-preview-group="1" />
+          </p>
+          <p>从最亮的星到我只喜欢你，喜欢你的嘟嘟嘴……</p>
+          <p>
+            <img src="http://m.qpic.cn/psb?/V12pHhGv4dCCVJ/E.GQ0xKP83i8EboWpQb7Dokb7mIzX3InwHS50TSvbdk!/b/dKTIKuCIFgAA&bo=gAJTA4ACUwMBFzA!&rf=viewer_4" data-preview-src="" data-preview-group="1" />
+          </p>
+          <p>愿你被这世界温柔以待……</p>
+          <p>
+            <img src="http://b241.photo.store.qq.com/psb?/V12pHhGv4dCCVJ/VKDFBwoObXgkEHQ*pJeILJdGdea39epnVehLoKOm.H4!/b/dAHOqI.XFQAA&bo=twIIAgAAAAABB58!&rf=viewer_4" data-preview-src="" data-preview-group="1" />
+          </p>
+          <p>很荣幸遇到你，并能与你一直书写我们的故事！</p>
+          <p>
+            <img src="http://b98.photo.store.qq.com/psb?/V12pHhGv398FhC/o9hlDwho8mUucP*fjtNX3u*y0jufbI7CcRfz6BT8Tx8!/b/dGIAAAAAAAAA&bo=OASgBQAGAAgFCb0!&w=264&h=351&rf=travel&t=5" data-preview-src="" data-preview-group="1" />
+          </p>
+          <p>我觉得最遗憾的就是，我们还是错过了你的毕业照……​</p>
+          <p>
+            <img src="http://m.qpic.cn/psb?/V12pHhGv398FhC/09kM149whZl1*LRjTNo4QzZLtWPSu9876nr*ID.Ik3E!/b/dJEAAAAAAAAA&bo=qwYABYAPoAsRKZI!&rf=viewer_4" data-preview-src="" data-preview-group="1" />
+          </p>
+          <p>万千星河中，茫茫人海中，你是我的梦……​</p>
+          <p>
+            <img src="http://a4.qpic.cn/psb?/V12pHhGv398FhC/P7UZ5wAHzWcvStkpJccvY0cb*JLdPBZIw9fhU3o1q50!/b/dL8AAAAAAAAA&bo=QAZVCKAPuAsRCTk!&rf=viewer_4" data-preview-src="" data-preview-group="1" />
+          </p>
+          <p>真希望你能回来，我们能回去……</p>
+          <p>
+            <img src="http://b228.photo.store.qq.com/psb?/V12pHhGv398FhC/S3pI6RaW6FJEUdhvUbpVJiE2qI2TESpJq8idiSp0xy8!/b/dOQAAAAAAAAA&bo=gAJVAwAAAAABB*Q!&rf=viewer_4" data-preview-src="" data-preview-group="1" />
+          </p>
+          <p>你是我的梦,和你步入教堂结婚是我人生中最期待的时刻…</p>
+          <p>
+            <img src="../img/2020.jpg" data-preview-src="" data-preview-group="1" />
+          </p>
+        </div>
+      </div>
+</body>
+</html>
+<script src="../js/jquery-1.12.2.min.js"></script>
+<script src="../js/bgm.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="http://www.dcloud.io/hellomui/js/mui.zoom.js"></script>
+<script src="http://www.dcloud.io/hellomui/js/mui.previewimage.js"></script>
+<script>
+    mui.previewImage();
+    $('.GoHome').on('click',function () {
+      window.location.href = "../index.html";
+    })
+
+
+</script>

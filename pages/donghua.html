@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	.man{ position: absolute; top:100px;left:100px;border: 1px solid #ccc;}
+
+	</style>
+	<script src="../js/jquery-1.12.2.min.js"></script>
+	<script>
+	$(function(){
+		var timer = null;
+		var num = 1;
+		function move(){
+			num++;
+			if(num>6){
+				num=1;
+			}else if(num==6){
+        console.log(222);
+        clearInterval(timer);
+      }
+			$('img').attr('src','../img/box'+num+'.png')
+		}
+		$('.btn01').click(function(event) {
+			timer = setInterval(move,1000);
+		});
+		$('.btn02').click(function(event) {
+			clearInterval(timer);
+		});
+	})
+	</script>
+</head>
+<body>
+	<button class="btn01">动起来</button>
+	<button class="btn02">停下来</button>
+	<img src="../img/box1.png" height="80" width="80" alt="" class="man" />
+</body>
+</html>

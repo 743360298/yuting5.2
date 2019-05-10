@@ -1,0 +1,16 @@
+git init
+git add .
+git commit -m "dr520"
+git config --global user.email '743360298@qq.com'
+git config --global user.name '743360298'
+git commit -m "dr520"
+git push
+git checkout -b gh-pages
+git status
+git push https://github.com/743360298/DR520.git gh-pages
+
+
+git push https://github.com/743360298/DR520.git gh-pages
+https://github.com/743360298/DR520.git
+
+https://743360298.github.io/DR520/index.html  ДђПЊР§зг
