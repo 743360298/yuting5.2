@@ -10,7 +10,7 @@ git status
 git push https://github.com/743360298/yuting3.1.git gh-pages
 
 
-git push https://github.com/743360298/yuting3.1.git gh-pages
-https://github.com/743360298/yuting3.1.git
+git push https://github.com/743360298/yuting5.2.git gh-pages
+https://github.com/743360298/yuting5.2.git
 
-https://743360298.github.io/yuting3.1/index.html  打开例子
+https://743360298.github.io/yuting5.2/index.html  打开例子
